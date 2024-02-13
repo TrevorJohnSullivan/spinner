@@ -1,13 +1,14 @@
 const frames = ['|', '/', '-', '\\'];
 let time = 100
-let index = 0;
 for (let i = 0; i < frames.length; i++) {
   setTimeout(() => {
-    process.stdout.write(`\r${frames[index]}   `);
-    index = (index + 1) % frames.length;
+    process.stdout.write(`\r${frames[i]}   `);
   }, time);
   time = time + 200
 }
+
+
+
 
 
 // const frames = ['|', '/', '-', '\\'];
@@ -16,7 +17,7 @@ for (let i = 0; i < frames.length; i++) {
 // for (let i = 0; i < frames.length; i++) {
 //   setTimeout(() => {
 //     process.stdout.write(`\r${frames[index]}   `);
+//     index = (index + 1) % frames.length;
 //   }, time);
-//   index++ 
 //   time = time + 200
 // }
